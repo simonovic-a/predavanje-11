@@ -3,5 +3,6 @@
     "name": "Andreja",
     "age": 21,
     "budget": 10000,
+    "credit": 5000,
     "currency": "eur"
   }
