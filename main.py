@@ -14,3 +14,10 @@ if user['budget'] >= max_budget:
 elif user['budget'] < 0:
     print("Nedovoljan iznos budžeta")
     sys.exit()
+
+print(f"Dobar dan, dobrodošli nazad! Iznos Vašeg budžeta je {user['budget']}")
+
+expense = 0
+
+while expense <= 0 or expense > user['budget']:
+    expense = int(input("Molim Vas unesite želejeni iznos troška: "))
