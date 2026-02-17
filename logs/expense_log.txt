@@ -1,0 +1,2 @@
+Amount: 777, User: 1, DateTime: 2026-02-17 19:29:34.278711, Budget: 15000, Preostali Budget: 14223
+Amount: 55, User: 1, DateTime: 2026-02-17 19:31:36.566751, Budget: 15000, Preostali Budget: 14945

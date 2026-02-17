@@ -1,5 +1,6 @@
 import json
 import sys
+from datetime import datetime
 
 user = None
 max_budget = 100000
@@ -23,3 +24,12 @@ expense = 0
 
 while expense <= 0 or expense > user_budget:
     expense = int(input("Molim Vas unesite želejeni iznos troška: "))
+
+with open("logs/expense_log.txt", 'a') as file:
+    remaining_budget = user_budget-expense
+    log = (f"\nAmount: {expense}, "
+           f"User: {user['id']}, "
+           f"DateTime: {datetime.now()}, "
+           f"Budget: {user_budget}, "
+           f"Preostali Budget: {remaining_budget}")
+    file.write(log)
